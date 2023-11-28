@@ -19,7 +19,7 @@ while True:
     #import the random module
     import random
     #create a list of play options
-    t = ["Rock", "Paper", "Scissors"]
+    t = ["rock", "paper", "scissors"]
     #assign a random play to the computer
     computer = t[random.randint(0,2)]
     #set player to False
@@ -27,6 +27,7 @@ while True:
     while player == False:
         #set player to True
         player = input("Rock, Paper, Scissors?")
+        player = player.lower()
         if player == computer:
             print("-----------------------------------")
             #show the variable seleced by the computer
